@@ -1,21 +1,17 @@
-import React, { Component } from "react";
-import ContactForm from "./components/ContactForm";
-import ContactList from "./components/ContactList";
-import Filter from "./components/Filter";
-import Section from "./components/Section";
+import ContactForm from "./components/contactForm";
+import Filter from "./components/filter";
+import ContactList from "./components/contactList";
 
-class App extends Component {
-  render() {
-    return (
-      <Section>
-        <h1>Phonebook</h1>
-        <ContactForm />
-        <h2>Contacts</h2>
-        <Filter />
-        <ContactList />
-      </Section>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <h2>Phonebook</h2>
+      <ContactForm />
+      <h2>Contacts</h2>
+      <Filter />
+      <ContactList />
+    </div>
+  );
 }
 
 export default App;
